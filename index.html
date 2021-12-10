@@ -59,6 +59,8 @@
         
     <!-- /******************** UIkit CSS ********************/ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         
     <style>
         /******************** system CSS ********************/
@@ -86,11 +88,43 @@
 
     <!-- kakao sdk -->
         <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 
+<script>
+	$(function() {
+	   $('#success-modalm').modal();
+	});
+</script>
+    
 <body>
-
+    
+	<div class="modal" id="success-modalm">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body" >
+					<h4 class="modal-title"></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 		<span aria-hidden="true">&times;</span>
+        			</button>
+					<div style="width:50%; margin:30px auto;">
+						<img src="https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1876/20211206051502_6nbqy/png">
+					</div>
+						<p style="margin:30px">
+							<br>
+							해외에서 대한민국으로 입국하는
+							<br>
+							<b>모든 내외국인 10일간 격리 시행</b>
+							<br>
+							(2021년 12월 3일 ~ 2021년 12월 16일, 싱가포르발 VTL 대상 승객 제외)
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="https://www.kkday.com/ko">
